@@ -1,5 +1,9 @@
 import { existsSync, copyFileSync } from 'fs'
-import { join } from 'path'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 const filesToCopy = ['.eslintrc.json', '.eslintignore']
 
@@ -9,8 +13,5 @@ filesToCopy.forEach((file) => {
 
   if (!existsSync(destination)) {
     copyFileSync(source, destination)
-    console.log(`${file} file copied to project root`)
-  } else {
-    console.log(`${file} file already exists in project root`)
   }
 })
