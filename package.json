@@ -1,9 +1,7 @@
 {
   "name": "eslint-madmax",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "configuration eslint with typescript and standard by madmax",
-  "main": "index.js",
-  "type": "module",
   "scripts": {
     "postinstall": "node postinstall.js"
   },
@@ -14,6 +12,11 @@
   ],
   "author": "madmax",
   "license": "ISC",
+  "files": [
+    "postinstall.js",
+    ".eslintrc.json",
+    ".eslintignore"
+  ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "eslint": "^8.56.0",
