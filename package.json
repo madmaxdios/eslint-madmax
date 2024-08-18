@@ -1,6 +1,6 @@
 {
   "name": "eslint-madmax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "configuration eslint with typescript and standard by madmax",
   "main": "index.js",
   "type": "module",
